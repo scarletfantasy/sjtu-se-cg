@@ -9,7 +9,13 @@ a program of simple bezier curve implement
 ![](bezier.png)
 ## tessellation
 a program of simple tesselation example
+
 ![](tess.png)
+
+## particles
+a program of simple cs particles
+
+![](particle.png)
 
 
 # request
