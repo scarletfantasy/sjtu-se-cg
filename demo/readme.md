@@ -19,6 +19,9 @@ vcpkg是微软推出的一款库管理软件,也是我觉得目前较为简易�
     vcpkg install glfw3:x64-windows glad:x64-windows imgui[core,opengl3-binding,glfw-binding]:x64-windows
     vcpkg install assimp:x64-windows eigen3:x64-windows
 
+if you installed successful, you can see the following image
+![](res.png)
+
 # some attention
 * pay attention to the relative path of your resource file when you upload your executable binary
 
