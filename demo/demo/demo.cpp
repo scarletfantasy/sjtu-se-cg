@@ -17,12 +17,9 @@ void processInput(GLFWwindow* window)
 }
 
 float quad[] = {
-	-0.5,-0.5,
-	0.5,-0.5,
-	-0.5,0.5,
-	0.5,0.5,
-	-0.5,0.5,
-	0.5,-0.5,
+	0.0,0.0,1.0,0.0,0.0,
+	0.0,0.5,0.0,1.0,0.0,
+	0.5,0.0,0.0,0.0,1.0
 };
 void updateUI()
 {
@@ -70,9 +67,11 @@ int main()
 	glGenBuffers(1, &VBO);
 	glBindVertexArray(VAO);
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	glBufferData(GL_ARRAY_BUFFER, 6 * sizeof(float) * 2, quad, GL_STATIC_DRAW);
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (void*)0);
+	glBufferData(GL_ARRAY_BUFFER, 3 * sizeof(float) * 5, quad, GL_STATIC_DRAW);
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(2 * sizeof(float)));
 	glEnableVertexAttribArray(0);
+	glEnableVertexAttribArray(1);
 
 
 
@@ -100,7 +99,7 @@ int main()
 
 		shader.use();
 		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIANGLES, 0, 6);
+		glDrawArrays(GL_TRIANGLES, 0, 3);
 
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 		glfwSwapBuffers(window);
