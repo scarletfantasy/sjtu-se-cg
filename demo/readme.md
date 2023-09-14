@@ -1,9 +1,7 @@
 # demo
 
 basic homework architecture with minimum code
-## bezier curve
 
-a program of simple bezier curve implement
 
 # request
 * glfw
@@ -12,7 +10,7 @@ a program of simple bezier curve implement
 * assimp(optional, for model operation)
 * eigen(optional, for math calculation)
 
-# install using vcpkg
+# environment install using vcpkg
 安装和使用说明详见 [microsoft vcpkg](https://github.com/microsoft/vcpkg)
 
     vcpkg integrate install
