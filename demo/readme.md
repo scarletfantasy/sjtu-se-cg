@@ -24,6 +24,7 @@ if you installed successful, you can see the following image
 
 # some attention
 * pay attention to the relative path of your resource file when you upload your executable binary
+* check if there is any dll missing befor you packing your binaries to ensure that the homework can run on our score computer
 
 # other platform
 for platform that is not windows, i recommend you to rely on the cmake to build your own proj. you can reference to the cmake proj like [learnopengl](https://github.com/JoeyDeVries/LearnOpenGL), or some simpler ones like [OpenGLSampleCmake](https://github.com/Shot511/OpenGLSampleCmake)
